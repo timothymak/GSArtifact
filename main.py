@@ -40,12 +40,12 @@ def take_screenshot(window):
     im.show(SCREENSHOT_PATH)
 
 def main():
-    if game_running:
+    if game_running():
         window = activate_window()
         take_screenshot(window)
         pass
     else:
-        print(PROCESS_NAME + "is not running!")
+        print(PROCESS_NAME + " is not running!")
 
 if __name__ == "__main__":
     main()
